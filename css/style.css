@@ -38,6 +38,9 @@ label{
 	margin:0;
 }
 /*-- banner --*/
+#home{
+    z-index: 1;
+}
 .header h1 {
     margin: 0;
 }
@@ -54,6 +57,7 @@ label{
     -ms-background-size: cover;
     min-height: 770px;
     position: relative;
+    z-index: 
 }
 .banner-image-w3layouts img {
     position: absolute;
@@ -2354,7 +2358,7 @@ a.callbacks_nav.callbacks1_nav.prev {
          float: right;
 	}
 	.banner-image-w3layouts img {
-		width: 180px;
+		width: 150px;
 		right: 6%;
 	}
 	.agile_banner_info {
