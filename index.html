@@ -136,16 +136,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<span>I am Yugandhar Reddy</span>
 			</h3>
 			<p>
-				<span>Hi!, Iam Yugandhar Reddy </span>Engineering professional with an experience of 5+ years in product development. Extensive
+				<span>Hi!, Iam Yugandhar Reddy </span>Engineering professional with an experience of <experience>5</experience>+ years in product development. Extensive
 				experience in development in Java, Data Structures & Algorithms. Extensive experience in designing concurrent & scalable
 				applications.</p>
 			<ul>
 				<li>
 					<span>Name</span>: Yugandhar Reddy</li>
 				<li>
-					<span>Age</span>: 26 Years</li>
+					<span>Age</span>: <age>26</age> Years</li>
 				<li>
-					<span>Experience</span>: +5 Years</li>
+					<span>Experience</span>: +<experience>5</experience> Years</li>
 				<li>
 					<span>Email</span>:
 					<a href="mailto:yugandharr147@gmail.com">yugandharr147@gmail.com</a>
@@ -156,7 +156,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</li>
 				<li>
 					<span>Website</span>:
-					<a href="#">me.yugandhar.website</a>
+					<a href="#">www.yugandhar.tech</a>
 				</li>
 				<li>
 					<span>Address</span>: Bnagalore, India.</li>
@@ -820,5 +820,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 </body>
+<script>
+
+$(function() {
+      
+	function monthDiff(dateFrom, dateTo) {
+ return dateTo.getMonth() - dateFrom.getMonth() + 
+   (12 * (dateTo.getFullYear() - dateFrom.getFullYear()))
+}
+
+	  	$("experience").html((monthDiff(new Date("1/11/2012"),new Date())/12).toFixed(1));
+		  $("age").html((monthDiff(new Date("4/4/1991"),new Date())/12).toFixed(0));
+
+
+        });
+
+</script>
 
 </html>
